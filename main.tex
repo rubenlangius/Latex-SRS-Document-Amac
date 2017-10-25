@@ -38,22 +38,23 @@ The repair tool will be used to manage all the repair processes within Amac. The
 A repair management system stores the following information.\\
 \\
 Customer details:\\
-It includes the originating flight terminal and destination terminal, along with the stops in between, the number of seats booked/available seats between two destinations etc.\\
+It includes customer code, name, address, email and phone number. This information is used to communicate with the customer. It may also be used for future marketing purposes.\\
 \\
-Product description:\\
-It includes customer code, name, address and phone number. This information may be used for keeping the records of the customer for any emergency or for any other kind of information.\\
+Product details:\\
+It includes serial number, type of product, current state and personal information like passwords if applicable.\\
 \\
 Repair details:\\
-It includes customer details, code number, flight number, date of booking, date of travel.\\
+It includes customer problem, internal notes from employees, ordered parts and costs / payment information.\\
 \\
-The functionality of the tool is to give the salesman and the repair department the ability to keep track of repair process. 
+
 
 \subsection {Users and Stakeholders}
 Users:
 \begin{enumerate}
     \item Salesman
-    \item Repair employee
+    \item Repair technician
     \item Management
+    \item Customers
 \end{enumerate}
 \\
 Customers:
@@ -61,6 +62,23 @@ Customers:
     \item Amac B.V.
     \item An Amac Customer with a repair.
 \end{enumerate}
+
+
+\subsection{User Characteristics}
+The system will be used in a wide variety of enviroment but most of all within Amac stores / headquarter.  The salesman, technicians, management and customer will be the main users. Given the condition that not all the users are computer-literate. Some users may have to be trained on using the system. The system is also designed to be user-friendly. It uses a Graphical User Interface (GUI). \\
+\\
+Salesman:\\ 
+They all have general sales duties. Every staff is experienced with computers, they are already familiar with the systems currently used. The sales employees are responsible for the check-in of the repair, in which all the information about the customer and the product is entered and validated. \\
+\\
+Repair technician:\\
+The repair technician are responsible for fixing any software or hardware related issues. Due to their techincal skill, they are already familiar with complicated systems. In the repair tool these employees are responsible for keeping track of the current process of all the repairs, including proper communication to the customer.\\
+\\
+Management:\\
+Management is responsible for keeping track of all the activities and managing the shops in such a way that every shop is most efficient and returns the best possible customer experience possible. For these tasks they will use the repair tool to gather statistics. \\
+\\
+Customers:\\
+The customer will be able to track their repair process and accept any offers send by the repair technician. The experience of the customers with these system is higly variable. \\
+
 
 \subsection{Use cases}
 These are the use cases for the users of my App
