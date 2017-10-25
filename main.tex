@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Requirements Document for Amac Repair Tool\\ First Draft}
+\author{Ruben Langius - S2583992}
+\date{September 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Amac is a Apple Premium Reseller in the netherland. They aim to give the best possible Apple experience. One of their biggest problems is proper management of their repair processes in which they repair the devices of customers. There are several tools in use but they would like to have a clear overview of the requirements of one system that cover all the aspects.
+
+\subsection{Company Information}
+Amac is the biggest Apple Premium Reseller in the Netherlands. With 46 shops and a web-shop they provide their customers with a great shopping experience. Amac is also an authorized repair partner from Apple. Using one central repair centre in Utrecht and several smaller in-shop repair departments they are able to give their customers the hardware support they need.\\
+\\
+My main contact person was the store manager from Amac Groningen, Boaz Molenaar. But I've interviewed multiple people which I all list below. 
+
+\begin{enumerate}
+\item Boaz Molenaar, Store manager \\
+email: b.molenaar@amac.nl\\
+tel : +31 6 52 37 17 03
+\item John Buijs, Repair technician 
+\item Bjorn Appeldoorn, Salesman
+\end{enumerate}
+
+
+\subsection{Purpose}
+The purpose of this document is to build a repair tool to manage the whole repair process. This includes the customer communication, ordering parts, legal and payment processes. 
+
+\subsection{Scope}
+The repair tool will be used to manage all the repair processes within Amac. The system will be designed to maximize the productivity for all the users by automating as much as possible. The system will facilitate communication between customer, salesman, repair technicians and managers. All the functionality will be implemented in a format which is easy to understand and use.
+
+
+\section{Product Overview}
+
+A repair management system stores the following information.\\
+\\
+Customer details:\\
+It includes the originating flight terminal and destination terminal, along with the stops in between, the number of seats booked/available seats between two destinations etc.\\
+\\
+Product description:\\
+It includes customer code, name, address and phone number. This information may be used for keeping the records of the customer for any emergency or for any other kind of information.\\
+\\
+Repair details:\\
+It includes customer details, code number, flight number, date of booking, date of travel.\\
+\\
+The functionality of the tool is to give the salesman and the repair department the ability to keep track of repair process. 
+
+\subsection {Users and Stakeholders}
+Users:
+\begin{enumerate}
+    \item Salesman
+    \item Repair employee
+    \item Management
+\end{enumerate}
+\\
+Customers:
+\begin{enumerate}
+    \item Amac B.V.
+    \item An Amac Customer with a repair.
+\end{enumerate}
+
+\subsection{Use cases}
+These are the use cases for the users of my App
+\begin{enumerate}
+    \item Creating a repair with the customer
+    \item Updating state of repairs
+    \item Ordering parts needed for the repairs
+    \item Automatic Customer Satisfaction reports.
+    \item Generating overall Statistics.
+\end{enumerate}
+
+\section{Functional Requirements}
+\subsection{Register Customer}
+Salesman should be able to register the customer.
+\subsection{Gathering Product Info}
+While creating a repair, the salesman must be able to gather product information using the serial number from the broken device.
+\subsection{Communication}
+Repair staff should be able to communicate with the customer from inside the tool during the repair
+
+\section{Non Functional Requirements} 
+\subsection{Privacy}
+Customer information should be handled with great care. Especially information regarding Apple ID's Best is to implement encryption for all data. 
+\subsection{Performance}
+To create the best customer experience, speed is of essence. Especially the salesman in the shops are busy with multiple customers at once. Therefore any delay in the tool is not acceptable. 
+
+\end{document}
